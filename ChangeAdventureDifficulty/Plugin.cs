@@ -21,6 +21,7 @@ namespace ChangeAdventureDifficulty
 
 
         public ConfigEntry<bool> ConfigEnabled;
+        public ConfigEntry<string> ConfigSelectedDifficulty;
 
 
 
@@ -42,6 +43,11 @@ namespace ChangeAdventureDifficulty
                 "Enabled",
                 true,
                 "Enables the mod.");
+
+            ConfigSelectedDifficulty = Config.Bind("General",
+                "SelectedDifficulty",
+                "Oni",
+                "Difficulty to set any story mode songs to. (Easy, Normal, Hard, Oni, Ura)");
         }
 
         private void SetupHarmony()
