@@ -1,5 +1,6 @@
 # RF.ChangeAdventureDifficulty
- A Rhythm Festival mod that changes the difficulty songs are played at in story mode.
+ A Rhythm Festival mod that changes the difficulty songs are played at in story mode.\
+ This mod also enables saving scores from story mode. 
  
 # Requirements
  Visual Studio 2022 or newer\
