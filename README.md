@@ -1,6 +1,9 @@
 # RF.ChangeAdventureDifficulty
  A Rhythm Festival mod that changes the difficulty songs are played at in story mode.\
  This mod also enables saving scores from story mode. 
+
+ To use it, set the SelectedDifficulty config value to whatever difficulty you want.\
+ With Ura, it will only select Ura for songs that have an Ura chart, otherwise it will pick Oni.
  
 # Requirements
  Visual Studio 2022 or newer\
