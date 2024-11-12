@@ -5,8 +5,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <ModName>ChangeAdventureDifficulty</ModName>
-    <ModVersion>0.0.1</ModVersion>
-    <Description>A Rhythm Festival template for mod creation.</Description>
+    <ModVersion>1.0.0</ModVersion>
+    <Description>A Rhythm Festival mod that changes the difficulty songs are played at in story mode.</Description>
   </PropertyGroup>
   
   <Target Name="UserFile" AfterTargets="PreBuildEvent">
