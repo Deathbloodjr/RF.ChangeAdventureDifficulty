@@ -47,10 +47,13 @@ namespace ChangeAdventureDifficulty
         {
             var dataFolder = Path.Combine("BepInEx", "data", ModName);
 
-            ConfigEnabled = config.Bind("General",
-                "Enabled",
-                true,
-                "Enables the mod.");
+            if (!isSaveManager)
+            {
+                ConfigEnabled = config.Bind("General",
+                   "Enabled",
+                   true,
+                   "Enables the mod.");
+            }
 
             ConfigSelectedDifficulty = config.Bind("General",
                 "SelectedDifficulty",
