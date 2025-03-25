@@ -42,17 +42,14 @@ namespace ChangeAdventureDifficulty.Plugins
 
         static void SetSelectedLevel()
         {
-            if (selectedLevel == EnsoData.EnsoLevelType.Num)
+            var level = Plugin.Instance.ConfigSelectedDifficulty.Value;
+            switch (level)
             {
-                var level = Plugin.Instance.ConfigSelectedDifficulty.Value;
-                switch (level)
-                {
-                    case "Easy": selectedLevel = EnsoData.EnsoLevelType.Easy; return;
-                    case "Normal": selectedLevel = EnsoData.EnsoLevelType.Normal; return;
-                    case "Hard": selectedLevel = EnsoData.EnsoLevelType.Hard; return;
-                    case "Oni": selectedLevel = EnsoData.EnsoLevelType.Mania; return;
-                    case "Ura": selectedLevel = EnsoData.EnsoLevelType.Ura; return;
-                }
+                case "Easy": selectedLevel = EnsoData.EnsoLevelType.Easy; return;
+                case "Normal": selectedLevel = EnsoData.EnsoLevelType.Normal; return;
+                case "Hard": selectedLevel = EnsoData.EnsoLevelType.Hard; return;
+                case "Oni": selectedLevel = EnsoData.EnsoLevelType.Mania; return;
+                case "Ura": selectedLevel = EnsoData.EnsoLevelType.Ura; return;
             }
         }
     }
